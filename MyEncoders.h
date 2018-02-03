@@ -6,9 +6,9 @@
 
 //IF YOU WANT TO DECLARE VARIABLES VIEWABLE TO OTHER MODULE,
 //DECLARE THEM HERE USING THE KEYWORD extern, then declare them in the .cpp
-extern unsigned long countsLR[2];
-extern unsigned long timesL[2];
-extern unsigned long timesR[2];
+//extern unsigned long countsLR[] = {0,0};
+//extern unsigned long timesL[] = {0,0};
+//extern unsigned long timesR[] = {0,0};
 
 //this function sets the tick counts to 0
 void resetCounts();
@@ -26,8 +26,9 @@ void getSpeeds(float speeds[]);
 //this function should include whatever code necessary to initialize this module
 void initEncoders();
 
-void incrementL();
-void incrementR();
-
+//void incrementL();
+//void incrementR();
+void gettimeL();
+void gettimeR();
 
 #endif
